@@ -1,0 +1,22 @@
+<style>
+header{
+  border-bottom:2px solid gray;
+  padding:0px;
+  }
+ol .saw{
+   color:gray;
+   border-right: 2px solid gray;
+   width: 200px;
+   height: 600px;
+   float: left;
+   font-size: 20px;
+   padding-left : 30px;
+ }
+article{
+    color:blue;
+}
+  h2{
+    color:red;
+    text-decoration: underline;
+  }
+</style>

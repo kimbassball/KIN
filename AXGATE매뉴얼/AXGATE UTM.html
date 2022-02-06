@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://211.34.58.114:4433/ -->
+<html ng-app="login" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="https://211.34.58.114:4433/img/favicon.ico">
+
+	<title>AXGATE UTM</title>
+
+	<link rel="stylesheet" href="./AXGATE UTM_files/login.min.css">
+	<script src="./AXGATE UTM_files/login.js.다운로드"></script>
+	
+
+	<!-- Custom styles for this template -->
+
+	<style>
+		html{
+			height: 100%;
+		}
+		body{
+			background: linear-gradient(#c5c5c5 0%, #fff 55%, #fff 78%, #cdcdcd 100%);
+		}
+		html,body{
+			padding: 0;
+			margin: 0;
+		}
+		@media all and (max-width:480px){
+			.axgate{
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translateY(-48%);
+				-ms-transform: translateY(-48%);
+				transform: translateY(-48%);
+			}
+			.login_container{
+				width: 200px;
+				height: 124px;
+				margin: 0 auto;
+				background: url("./img/m_login_otp.png") no-repeat;
+				background-size: cover;
+				padding: 146px 60px 130px 60px;
+			}
+			.form-signin{
+				width: 200px;
+				height: 127px;
+			}
+			.form-signin table{
+				padding: 0;
+				margin: 0;
+				border-collapse:collapse;
+				border-spacing: 0;
+				margin: 0 0 15px 0;
+			}
+			.form-signin .username_box, .form-signin .password_box{
+				width: 200px;
+				height: 29px;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+			.form-signin .username_box{
+				background: url("./img/login_username.png") no-repeat;
+				background-size: cover;
+				margin-bottom: 2px;
+			}
+			.form-signin .password_box{
+				background: url("./img/login_password.png") no-repeat;
+				background-size: cover;
+				margin-bottom: 2px;
+			}
+			.form-signin .password_box .password, .form-signin .username_box .username{
+				border: 0;
+				width: 159px;
+				height: 22px;
+				margin: 3px 0 0 37px;
+				outline: none;
+				font-size: 0.688em;
+			}
+			.form-signin .otp_off, .form-signin .otp_on {
+				margin: 0;
+				padding: 1px;
+			}
+			.form-signin .otp_checkbox{
+				float: left;
+			}
+			.form-signin .otp_check{
+				display: none;
+			}
+			.form-signin .otp_off .otp_check_label{
+				width: 29px;
+				height: 29px;
+				display: inline-block;
+				background: url("./img/m_login_check_off.png") no-repeat;
+				background-size: cover;
+				margin: 0 2px 0 0;
+			} 
+			.form-signin .otp_on .otp_check_label{
+				width: 29px;
+				height: 29px;
+				display: inline-block;
+				background: url("./img/m_login_check_on.png") no-repeat;
+				background-size: cover;
+				margin: 0 2px 0 0;
+			}
+			.form-signin .otp_off .otp_input{
+				float: left;
+				width: 168px;
+				height: 28px;
+				background: url("./img/m_login_input_off.png") no-repeat;
+				background-size: cover;
+			}
+			.form-signin .otp_on .otp_input{
+				float: left;
+				width: 168px;
+				height: 28px;
+				background: url("./img/m_login_input_on.png") no-repeat;
+				background-size: cover;
+			}
+			.form-signin .otp_off .otp_password .swal2-input::-webkit-input-placeholder{
+				color: #404042;
+			}
+			.swal2-input::-webkit-input-placeholder{
+				color: #404042;
+			}
+			.form-signin .otp_off .otp_password{
+				width: 150px;
+				border: 0;
+				margin: 6px 0 0 6px;
+				outline: none;
+				background-color: #5a5a5a;
+				font-size: 0.688em;
+			}
+			.form-signin .otp_on .otp_password{
+				width: 150px;
+				border: 0;
+				margin: 6px 0 0 6px;
+				outline: none;
+				font-size: 0.688em;
+			}
+			.form-signin .login_btn{
+				width: 200px;
+				height: 31px;
+				background: url("./img/login_btn_nor.png") no-repeat;
+				background-size: cover;
+				border: 0;
+				outline: none;
+			}
+			.form-signin .login_btn:hover, .form-signin .login_btn:active{
+				background: url("./img/login_btn_hover.png") no-repeat;
+				background-size: cover;
+			}
+		}
+
+		@media all and (min-width:480px){
+			.axgate{
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translateY(-45%);
+				-ms-transform: translateY(-45%);
+				transform: translateY(-45%);
+			}
+			.login_container{
+				width: 272px;
+				height: 192px;
+				margin: 0 auto;
+				background: url("./img/login3_otp.png") no-repeat;
+				padding: 57px 150px 188px 558px;
+			}
+			.form-signin{
+				width: 272px;
+				height: 169px;
+			}
+			.form-signin table{
+				padding: 0;
+				margin: 0 0 20px 0;
+				border-collapse:collapse;
+				border-spacing:0;
+			}
+			.form-signin .username_box, .form-signin .password_box{
+				width: 100%;
+				height: 38px;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+			.form-signin .username_box{
+				background: url("./img/login_username.png") no-repeat;
+				margin-bottom: 3px;
+			}
+			.form-signin .password_box{
+				background: url("./img/login_password.png") no-repeat;
+				margin-bottom: 3px;
+			}
+			.form-signin .password_box .password, .form-signin .username_box .username{
+				border: 0;
+				width: 206px;
+				height: 28px;
+				margin: 5px 0 0 53px;
+				outline: none;
+			}
+			.form-signin .otp_off, .form-signin .otp_on {
+				margin: 0;
+				padding: 0;
+			}
+			.form-signin .otp_checkbox{
+				float: left;
+			}
+			.form-signin .otp_check{
+				display: none;
+			}
+			.form-signin .otp_off .otp_check_label{
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				background: url("./img/login_otp_check_off.png") no-repeat;
+				margin: 0 2px 0 0;
+			} 
+			.form-signin .otp_on .otp_check_label{
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				background: url("./img/login_otp_check_on.png") no-repeat;
+				margin: 0 2px 0 0;
+			}
+			.form-signin .otp_off .otp_input{
+				float: left;
+				width: 230px;
+				height: 40px;
+				background: url("./img/login_otp_input_off.png") no-repeat;
+			}
+			.form-signin .otp_on .otp_input{
+				float: left;
+				width: 230px;
+				height: 40px;
+				background: url("./img/login_otp_input_on.png") no-repeat;
+			}
+			.form-signin .otp_off .otp_password ::-webkit-input-placeholder{
+				color: #404042;
+			}
+			.swal2-input::-webkit-input-placeholder{
+				color: #404042;
+			}
+			.form-signin .otp_off .otp_password{
+				border: 0;
+				margin: 11px 0 0 13px;
+				outline: none;
+				background-color: #5a5a5a;
+			}
+			.form-signin .otp_on .otp_password{
+				border: 0;
+				margin: 11px 0 0 13px;
+				outline: none;
+			}
+			.form-signin .login_btn{
+				width: 272px;
+				height: 42px;
+				background: url("./img/login_btn_nor.png") no-repeat;
+				border: 0;
+				outline: none;
+			}
+			.form-signin .login_btn:hover, .form-signin .login_btn:active{
+				background: url("./img/login_btn_hover.png") no-repeat;
+				background-size: cover;
+			}
+		}
+
+		#preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(255,255,255,1);
+			z-index: 9999;
+			display: block;
+		}
+		#preloader .loader {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: -30px 0 0 -30px;
+			text-align: center;
+		}
+		#preloader .loader .loader-img {
+			background: url("./img/loading.gif");
+			width: 60px;
+			height: 60px;
+			display: block;
+		}
+	</style>
+</head>
+
+<body ng-esc="closePopup()" data-new-gr-c-s-check-loaded="14.1046.0" data-gr-ext-installed="">
+	<section id="preloader" style="display: none;">
+		<div class="loader" id="loader">
+			<div class="loader-img"></div>
+		</div>
+	</section>
+	<div class="axgate ng-scope" ng-controller="loginController">
+		<div class="login_container image_check">
+			<div class="form-signin">
+
+				<table width="100%" class="loginTable">
+					<tbody><tr>
+						<td>
+							<div class="username_box image_check">
+								<input type="text" id="username" autocomplete="off" name="username" class="username ng-pristine ng-valid ng-empty ng-touched" ng-model="username" placeholder="아이디" autofocus="" ng-enter="gotoPassword()">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="password_box image_check">
+								<input type="password" autocomplete="new-password" id="password" name="password" class="password ng-pristine ng-untouched ng-valid ng-empty" ng-model="password" placeholder="비밀번호" ng-enter="loginSubmit()">
+							</span>
+						</td>
+					</tr> 
+					<tr>
+						<td id="opt_box" class="otp_off">
+							<span class="otp_checkbox">
+								<input type="checkbox" id="otp_check" class="otp_check ng-pristine ng-untouched ng-valid ng-empty" name="otp_check" ng-model="otp_check">
+								<label for="otp_check" class="otp_check_label image_check" ng-click="check_onoff()"></label>
+							</span>
+							<span class="otp_input image_check">
+								<input type="password" autocomplete="new-password" id="otp_password" name="otp_password" class="otp_password ng-pristine ng-untouched ng-valid ng-empty" ng-model="otp_password" placeholder="OTP" ng-enter="loginSubmit()" disabled="true">
+							</span>
+						</td>
+					</tr>
+				</tbody></table>
+				<button class="login_btn image_check" ng-click="loginSubmit()" type="button"></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#preloader").hide();
+			$(".image_check").each(function(i, img) {
+				var bi = $(this).css("background").match(/url\(\"([^()]*)\"\)/).pop();
+				var image = new Image();
+				$(image).error(function() { 
+					self.location.reload();
+				}); 
+				$(image).attr("src", bi);
+			});  
+		});
+	</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
